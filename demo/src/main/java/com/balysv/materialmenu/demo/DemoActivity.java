@@ -103,7 +103,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
         refreshDrawerState();
     }
 
-    @Override public void onClick(View v) {
+   /* @Override public void onClick(View v) {
         final int id = v.getId();
         switch (id) {
             case R.id.animate_item_menu:
@@ -140,7 +140,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 setMainState();
                 break;
         }
-    }
+    }*/
 
     private void setMainState() {
         materialButtonState = generateState(materialButtonState);
@@ -182,5 +182,10 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
                 return MaterialMenuDrawable.IconState.CHECK;
         }
         throw new IllegalArgumentException("Must be a number [0,3)");
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
